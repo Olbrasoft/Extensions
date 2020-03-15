@@ -1,6 +1,6 @@
 ﻿namespace Olbrasoft.Extensions
 {
-    public static class Decimal
+    public static class DecimalExtensions
     {
         /// <summary>
         /// https://stackoverflow.com/questions/2751593/how-to-determine-if-a-decimal-double-is-an-integer
