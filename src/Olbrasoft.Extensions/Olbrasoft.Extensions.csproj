@@ -5,7 +5,7 @@
     <Authors>Jiří Tůma</Authors>
     <Company>Olbrasoft</Company>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>Extensions.png</PackageIcon>
+    <PackageIcon>olbrasoft-extensions.png</PackageIcon>
     <RepositoryUrl>https://github.com/Olbrasoft/Extensions</RepositoryUrl>
     <RepositoryType>Dll</RepositoryType>
     <PackageTags>Extensions Decimal Enum Type</PackageTags>
@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\Extensions.png">
+    <None Include="..\..\olbrasoft-extensions.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
