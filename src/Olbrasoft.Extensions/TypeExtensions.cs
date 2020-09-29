@@ -11,5 +11,10 @@ namespace Olbrasoft.Extensions
 
         public static bool IsGenericType(this Type type, Type genericType)
              => type.GetTypeInfo().IsGenericType && type.GetGenericTypeDefinition() == genericType;
+
+        public static bool IsStatic(this Type type)
+        {
+            return type.IsAbstract && type.IsSealed;
+        }
     }
 }
