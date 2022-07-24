@@ -1,22 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;</TargetFrameworks>
-    <Authors>Jiří Tůma</Authors>
-    <Company>Olbrasoft</Company>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>olbrasoft-extensions.png</PackageIcon>
-    <RepositoryUrl>https://github.com/Olbrasoft/Extensions</RepositoryUrl>
-    <RepositoryType>Dll</RepositoryType>
-    <PackageTags>Extensions Decimal Enum Type</PackageTags>
-    <Description>Extending to classes from the system namespace</Description>
-    <Version>1.0.5</Version>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;Net6</TargetFrameworks>
+		<LangVersion>10</LangVersion>
+		<Authors>Jiří Tůma</Authors>
+		<Company>Olbrasoft</Company>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>olbrasoft-extensions.png</PackageIcon>
+		<RepositoryUrl>https://github.com/Olbrasoft/Extensions</RepositoryUrl>
+		<RepositoryType>Dll</RepositoryType>
+		<PackageTags>Extensions Decimal Enum Type</PackageTags>
+		<Description>Extending to classes from the system namespace</Description>
+		<Version>1.0.5</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\olbrasoft-extensions.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<Using Include="System"/>
+		<Using Include="System.Linq"/>
+		<Using Include="System.Reflection"/>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<None Include="..\..\olbrasoft-extensions.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
