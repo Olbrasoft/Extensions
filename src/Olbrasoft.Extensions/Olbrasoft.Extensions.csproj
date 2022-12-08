@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;Net6</TargetFrameworks>
-		<LangVersion>10</LangVersion>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;Net6;Net7</TargetFrameworks>
+		<LangVersion>11</LangVersion>
 		<Authors>Jiří Tůma</Authors>
 		<Company>Olbrasoft</Company>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -11,13 +11,16 @@
 		<RepositoryType>Dll</RepositoryType>
 		<PackageTags>Extensions Decimal Enum Type</PackageTags>
 		<Description>Extending to classes from the system namespace</Description>
-		<Version>1.0.6</Version>
+		<Version>1.0.7</Version>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Using Include="System"/>
-		<Using Include="System.Linq"/>
-		<Using Include="System.Reflection"/>
+		<Using Include="System" />
+		<Using Include="System.Linq" />
+		<Using Include="System.Reflection" />
 	</ItemGroup>
 	
 	<ItemGroup>
